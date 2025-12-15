@@ -3,6 +3,7 @@
   <remote name="grapheneos" fetch="https://github.com/GrapheneOS/" revision="refs/heads/16-qpr1"/>
   <remote name="grapheneos-gitlab" fetch="https://gitlab.com/grapheneos/" revision="refs/heads/16-qpr1"/>
   <remote name="aosp" fetch="https://android.googlesource.com" review="https://android-review.googlesource.com/"/>
+  <remote name="stakwork" fetch="https://github.com/stakwork" review="https://github.com/stakwork/"/>
   <default revision="refs/tags/android-16.0.0_r3" remote="aosp" sync-j="4"/>
   <superproject name="platform/superproject" remote="aosp" revision="android-16.0.0_r3"/>
   <contactinfo bugurl="go/repo-bug"/>
@@ -13,7 +14,7 @@
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="grapheneos" aosp-name="platform/bootable/recovery"/>
   <project path="branding" name="branding" remote="grapheneos"/>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed"/>
-  <project path="build/make" name="platform_build" groups="pdk,sysui-studio" remote="grapheneos" aosp-name="platform/build">
+  <project path="build/make" name="platform_build" groups="pdk,sysui-studio" remote="stakwork" aosp-name="platform/build">
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"/>
     <linkfile src="core" dest="build/core"/>
@@ -606,7 +607,7 @@
   <project path="external/zucchini" name="platform/external/zucchini" groups="pdk"/>
   <project path="external/zxing" name="platform/external/zxing" groups="pdk"/>
   <project path="frameworks/av" name="platform_frameworks_av" groups="pdk,sysui-studio" remote="grapheneos"/>
-  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="grapheneos" aosp-name="platform/frameworks/base"/>
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="stakwork" aosp-name="platform/frameworks/base"/>
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk"/>
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk"/>
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk"/>
@@ -749,7 +750,7 @@
   <project path="packages/apps/SampleLocationAttribution" name="platform/packages/apps/SampleLocationAttribution" groups="pdk-fs"/>
   <project path="packages/apps/SecureElement" name="platform/packages/apps/SecureElement" groups="apps_se,pdk-fs,pdk-cw-fs"/>
   <project path="packages/apps/Seedvault" name="platform_packages_apps_Seedvault" remote="grapheneos"/>
-  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="grapheneos" aosp-name="platform/packages/apps/Settings"/>
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="stakwork" aosp-name="platform/packages/apps/Settings"/>
   <project path="packages/apps/SettingsIntelligence" name="platform_packages_apps_SettingsIntelligence" groups="pdk-fs" remote="grapheneos" aosp-name="platform/packages/apps/SettingsIntelligence"/>
   <project path="packages/apps/SetupWizard2" name="platform_packages_apps_SetupWizard2" remote="grapheneos"/>
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="pdk-fs"/>
@@ -909,7 +910,7 @@
   <project path="system/ca-certificates" name="platform_system_ca-certificates" groups="pdk" remote="grapheneos" aosp-name="platform/system/ca-certificates"/>
   <project path="system/chre" name="platform/system/chre" groups="pdk"/>
   <project path="system/connectivity/wificond" name="platform/system/connectivity/wificond" groups="pdk"/>
-  <project path="system/core" name="platform_system_core" groups="pdk" remote="grapheneos" aosp-name="platform/system/core"/>
+  <project path="system/core" name="platform_system_core" groups="pdk" remote="stakwork" aosp-name="platform/system/core"/>
   <project path="system/cros-codecs" name="platform/system/cros-codecs" groups="pdk"/>
   <project path="system/dmesgd" name="platform/system/dmesgd" groups="pdk"/>
   <project path="system/extras" name="platform_system_extras" groups="pdk" remote="grapheneos" aosp-name="platform/system/extras"/>
