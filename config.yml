@@ -5,6 +5,8 @@ additional_remotes:
     fetch: https://github.com/GrapheneOS/
   - name: grapheneos-gitlab
     fetch: https://gitlab.com/grapheneos/
+  - name: stakwork
+    fetch: https://github.com/stakwork
 additional_projects:
   - path: branding
     name: branding
@@ -159,7 +161,6 @@ forked_aosp_repos:
     - platform/art
     - platform/bionic
     - platform/bootable/recovery
-    - platform/build
     - platform/build/release
     - platform/build/soong
     - platform/cts
@@ -184,7 +185,6 @@ forked_aosp_repos:
     - platform/external/tremolo
     - platform/external/wpa_supplicant_8
     - platform/frameworks/av
-    - platform/frameworks/base
     - platform/frameworks/hardware/interfaces
     - platform/frameworks/libs/systemui
     - platform/frameworks/native
@@ -204,7 +204,6 @@ forked_aosp_repos:
     - platform/packages/apps/Gallery2
     - platform/packages/apps/Launcher3
     - platform/packages/apps/ManagedProvisioning
-    - platform/packages/apps/Settings
     - platform/packages/apps/SettingsIntelligence
     - platform/packages/apps/StorageManager
     - platform/packages/apps/ThemePicker
@@ -223,7 +222,6 @@ forked_aosp_repos:
     - platform/packages/modules/NetworkStack
     - platform/packages/modules/NeuralNetworks
     - platform/packages/modules/Nfc
-    - platform/packages/modules/Permission
     - platform/packages/modules/Profiling
     - platform/packages/modules/RemoteKeyProvisioning
     - platform/packages/modules/StatsD
@@ -241,14 +239,12 @@ forked_aosp_repos:
     - platform/packages/services/Telecomm
     - platform/packages/services/Telephony
     - platform/system/ca-certificates
-    - platform/system/core
     - platform/system/extras
     - platform/system/fs/fs_mgr
     - platform/system/libfmq
     - platform/system/libufdt
     - platform/system/logging
     - platform/system/netd
-    - platform/system/sepolicy
     - platform/system/timezone
     - platform/system/tools/aidl
     - platform/system/update_engine
@@ -257,6 +253,13 @@ forked_aosp_repos:
     - platform/tools/apksig
     - platform/tools/metalava
     - trusty/lib
+  stakwork:
+    - platform/build
+    - platform/frameworks/base
+    - platform/packages/apps/Settings
+    - platform/system/core
+    - platform/packages/modules/Permission
+    - platform/system/sepolicy
 clone_depth_1_aosp_repos:
   - platform/external/deqp
   - platform/external/icu
