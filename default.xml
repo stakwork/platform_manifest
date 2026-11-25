@@ -16,7 +16,7 @@
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="grapheneos" aosp-name="platform/bootable/recovery"/>
   <project path="branding" name="branding" remote="grapheneos"/>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed"/>
-  <project path="build/make" name="platform_build" groups="pdk,sysui-studio" remote="stakwork" revision="refs/tags/2026111800-peel1" aosp-name="platform/build">
+  <project path="build/make" name="platform_build" groups="pdk,sysui-studio" remote="stakwork" revision="refs/tags/sandbox-2026111800-peel1" aosp-name="platform/build">
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"/>
     <linkfile src="core" dest="build/core"/>
