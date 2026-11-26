@@ -5,3 +5,4 @@
 - `vendor/peel` is pinned to a full commit SHA with `upstream="refs/heads/17"`.
 - Tags are never moved or deleted. A new Peel change means a new `-peel<N+1>` tag and a manifest bump PR.
 - Branch `17` is a pure upstream mirror; `peel/17` is the custom branch.
+- Pins were moved back from 2026112500 to 2026111800 because upstream withdrew the 2026112500 tag; the graphene-sync workflow never moves pins backwards, so this was done by hand.
